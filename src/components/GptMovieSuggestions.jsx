@@ -11,7 +11,7 @@ function GptMovieSuggestions() {
             const movieTitles = promptSelector.split(',').map(title => title.trim());
 
             const movieRequests = movieTitles.map(title =>
-                fetch(`http://www.omdbapi.com/?apikey=d0c17da5&t=${encodeURIComponent(title)}`)
+                fetch(`https://www.omdbapi.com/?apikey=d0c17da5&t=${encodeURIComponent(title)}`)
                     .then(response => response.json())
             );
 

@@ -11,10 +11,15 @@ function GptSearchBar() {
     const handleSearch=async(e)=>{
         e.preventDefault()
         const searchValue="Act as a Movie Recommendation system and suggest so movies for the query : " + searchRef.current.value + ". only give me names of 5 movies, comma separated like the example result given ahead. Example Result : Gadar, Sholay, Don , Golmaal , Koi Mil Gaya"
-        const result = await model.generateContent(searchValue);
-        const response = await result.response;
-        const text = response.text();
-        promptDispatch(setPrompt(text))
+        try {
+            const result = await model.generateContent(searchValue);
+            const response = await result.response;
+            const text = response.text();
+            promptDispatch(setPrompt(text))
+        } catch (error) {
+            console.log(error)
+        }
+       
     
 
     }
