@@ -13,7 +13,7 @@ function GptSearch() {
       </div>
             <GptSearchBar/>
 
-           {promptSelector.length!=0?<GptMovieSuggestions/>:<></>} 
+           {promptSelector.length!==0?<GptMovieSuggestions/>:<></>} 
         </div>
     )
 }

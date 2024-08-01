@@ -64,9 +64,8 @@ const Login = () => {
         }
         else {
             signInWithEmailAndPassword(auth, emailValue, passwordValue)
-            .then((userCredential) => {
+            .then(() => {
           
-              const user = userCredential.user;
             })
             .catch((error) => {
               const errorCode = error.code;

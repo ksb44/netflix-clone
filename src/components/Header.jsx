@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <>
     <div className=' absolute bg-gradient-to-b from-gray-500 z-20 flex flex-row justify-between'>
-      <img src={LOGO} className='w-1/6 '/>
+      <img src={LOGO} className='w-1/6 ' alt="logo"/>
     
    {selector &&  <div className='flex my-auto'>
      {gptFlag &&<select className='rounded-lg mx-2 bg-gray-500 text-white ' onChange={handleLanguage}>

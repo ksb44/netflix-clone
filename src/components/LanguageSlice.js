@@ -1,6 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { act } from "react";
-
 const languageSlice=createSlice({
     name:"language",
     initialState:{

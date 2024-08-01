@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { lang } from '../constants/LanguageConstants';
 import { model } from '../utils/Gemini';
-import GptMovieSuggestions from './GptMovieSuggestions';
 import { setPrompt } from './PromptSlice';
 
 function GptSearchBar() {
