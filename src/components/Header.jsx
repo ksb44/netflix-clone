@@ -60,7 +60,7 @@ const Header = () => {
       })}
     </select> }
     <button onClick={handleGpt} className='bg-purple-700 my-auto py-2 rounded-lg px-1 text-white hover:bg-inherit mx-auto'>
-      {gptFlag ? "Homepage" : "GPT Search"}</button>
+      {gptFlag ? "Homepage" : "AI"}</button>
     <img src={selector.photoURL} alt="usericon" className='w-8 h-8 my-auto m-2'/>
     <p className='bg-white my-auto mx-2 px-2'>{selector.displayName}</p>
     <button className='bg-red-700  rounded-xl h-8 text-white my-auto w-20' onClick={handleClick}>SignOut</button>
