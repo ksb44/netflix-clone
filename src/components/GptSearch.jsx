@@ -9,7 +9,7 @@ function GptSearch() {
     return (
         <div className=''>
              <div className='absolute -z-10'>
-        <img className=' h-full max-w-full' src={BACKGROUND} alt="bg" />
+        <img className=' aspect-square' src={BACKGROUND} alt="bg" />
       </div>
             <GptSearchBar/>
 

@@ -77,8 +77,8 @@ const Login = () => {
   return (
     <>
       <Header/>
-      <div className='absolute '>
-        <img className='' src={BACKGROUND} alt="bg" />
+      <div className='absolute  '>
+        <img className='h-full w-full aspect-square md:aspect-video' src={BACKGROUND} alt="bg" />
       </div>
       <div className=''> 
       <form className='w-[80%] lg:w-1/3 absolute flex flex-col  my-36 mx-auto right-0 left-0 px-6 bg-black  bg-opacity-75  rounded-3xl' >
