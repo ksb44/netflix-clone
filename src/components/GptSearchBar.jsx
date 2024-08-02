@@ -27,10 +27,10 @@ function GptSearchBar() {
         <div className='w-[60%] mx-auto '>
             <form className='pt-[25%] -mt-[1%]   grid grid-cols-12'>
 
-                <input type="text" ref={searchRef} className='p-4 m-4 col-span-8 rounded-xl md:mt-[33%] mt-[90%]' 
+                <input type="text" ref={searchRef} className='p-4 m-4 col-span-8 rounded-xl md:mt-[33%] my-[80%]' 
                  placeholder={lang[langSelector].gptSearchPlaceholder} 
                 />
-                <button type='submit' onClick={handleSearch} className='bg-red-600 text-white h-10 md:mt-[90%] mt-36  col-span-3 rounded-2xl'>{lang[langSelector].search}</button>
+                <button type='submit' onClick={handleSearch} className='bg-red-600 text-white h-10 md:mt-[90%] my-auto  col-span-3 rounded-2xl'>{lang[langSelector].search}</button>
             </form>
         </div>
     )
